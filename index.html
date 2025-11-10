@@ -1,29 +1,50 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="style.css">
-	<title> MaviBurguer </title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<title>Mavi Burguer</title>
 </head>
 <body>
 	<header>
-			<a href="/">
+		<a href="/">
 			<img src="logo.png">
 		</a>
-			<a href=javascript:;">
+		<a href="javascript:mostraMenu();">
 			<img src="menu.png">
 		</a>
 
-        <nav style="display:block;">
-            <ul>
-                <li><a href=""> Inicio </a></li>
-                <li><a href=""> Lanches </a></li>
-                <li><a href=""> Bebidas </a></li>
-                <li><a href=""> Combos </a></li>
-            
-            </ul>
-        </nav>
+		<nav id="menu" class="esconder">
+			<ul>
+				<li><a href="">Inicio</a></li>
+				<li><a href="">Lanches</a></li>
+				<li><a href="">Bebidas</a></li>
+				<li><a href="">Combos</a></li>
+			</ul>
+		</nav>
+
+		<script>
+			  function mostraMenu() {
+			    const menu = document.getElementById('menu');
+			    menu.classList.toggle('ativo');
+			  }
+		</script>
+</header>
+        <main>
+            <div class="conteiner">
+                <div class="destaque">
+                    <img scr="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cheeseburger.jpg/1200px-Cheeseburger.jpg">
+                    <div class="links">
+                       <a href="">Combo Especial</a>
+                        <a href="">Combo kids</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
 	</header>
 </body>
 </html>
